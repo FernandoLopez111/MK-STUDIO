@@ -29,7 +29,7 @@
       </div>
       <div class="card">
         <div class="image">
-          <img src="../img/uñas.jpg" alt="Servicio de belleza" />
+          <img src="../img/manos.jpg" alt="Servicio de belleza" />
         </div>
         <div class="contenido-card">
           <h3 class="subtitle">Uñas Acrilicas</h3>

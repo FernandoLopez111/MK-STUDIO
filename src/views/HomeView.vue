@@ -44,7 +44,7 @@
   min-height:100vh;
   padding: 6rem 9% 2rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/Uñas.jpg") no-repeat center center/cover;
+    url("../img/hands.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
