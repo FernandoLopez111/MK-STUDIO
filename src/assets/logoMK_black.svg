@@ -1,0 +1,17 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <text x="150" y="40" text-anchor="middle" font-size="14" font-family="serif" letter-spacing="3" fill="black">
+    EST. 2019
+  </text>
+  <text x="150" y="130" text-anchor="middle" font-size="120" font-family="serif" fill="black">
+    MK
+  </text>
+  <text x="180" y="160" font-size="14" font-family="serif" letter-spacing="2" fill="black">
+    KARINA
+  </text>
+  <text x="180" y="180" font-size="14" font-family="serif" letter-spacing="2" fill="black">
+    MARIELOS
+  </text>
+  <text x="150" y="250" text-anchor="middle" font-size="16" font-family="serif" letter-spacing="4" fill="black">
+    STUDIO BELLEZA
+  </text>
+</svg>
