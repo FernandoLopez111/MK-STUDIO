@@ -1,5 +1,5 @@
 <template>
-  <section class="home" id="home" data-aos="fade-in" data-aos-duration="1500">
+  <section class="home" id="home">
     <div class="content">
       <h1>MK STUDIO BELLEZA</h1>
       <p>

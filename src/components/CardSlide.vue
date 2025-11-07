@@ -1,10 +1,8 @@
 <template>
-  <section class="services" id="conoce-mas" data-aos="fade-up">
-    <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
-      Nuestros Servicios
-    </h2>
+  <section class="services" id="conoce-mas">
+    <h2 class="section-title">Nuestros Servicios</h2>
     <div class="container-card">
-      <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card">
         <div class="image">
           <img src="../img/pedicure.jpg" alt="Servicio de belleza" />
         </div>
@@ -16,7 +14,7 @@
           </p>
         </div>
       </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card">
         <div class="image">
           <img src="../img/manicure.jpeg" alt="Servicio de belleza" />
         </div>
@@ -29,7 +27,7 @@
           </p>
         </div>
       </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card">
         <div class="image">
           <img src="../img/uñas.jpg" alt="Servicio de belleza" />
         </div>
@@ -42,7 +40,7 @@
           </p>
         </div>
       </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card">
         <div class="image">
           <img src="../img/Lifting.jpeg" alt="Servicio de belleza" />
         </div>
@@ -55,7 +53,7 @@
           </p>
         </div>
       </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card">
         <div class="image">
           <img src="../img/laminado.jpeg" alt="Servicio de belleza" />
         </div>
@@ -68,7 +66,7 @@
           </p>
         </div>
       </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <div class="card">
         <div class="image">
           <img src="../img/Acripie.jpeg" alt="Servicio de belleza" />
         </div>
