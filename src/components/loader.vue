@@ -7,7 +7,7 @@
     <div class="wave bottom-wave"></div>
 
     <!-- LOGO -->
-    <img src="/dist/assets/logoMK_black-8cadc74c.svg" alt="Logo" class="logo" />
+    <img src="../assets/logoMK_black.svg" alt="Logo" class="logo" />
   </div>
 </template>
 

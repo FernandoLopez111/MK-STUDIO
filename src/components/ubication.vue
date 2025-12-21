@@ -63,7 +63,7 @@ import { FontAwesomeIcon } from "../routes/font-awesome";
 <style>
 .contact {
   padding: 80px 20px;
-  background-color: white;
+  background-color: beige;
 }
 
 .contact-container {
