@@ -1,10 +1,10 @@
 <template>
   <section id="contacto" class="contact">
     <div class="container">
-      <h2 class="section-title">Contacto</h2>
+      <h2 class="section-title"  data-aos="fade-up">Contacto</h2>
       <div class="contact-container">
         <div class="contact-info">
-          <div class="contact-item">
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
             <div class="contact-icon">
               <FontAwesomeIcon class="icon" icon="location-dot" />
             </div>
@@ -17,7 +17,7 @@
               </p>
             </div>
           </div>
-          <div class="contact-item">
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="400">
             <div class="contact-icon">
               <FontAwesomeIcon class="icon" icon="phone" />
             </div>
@@ -26,7 +26,7 @@
               <p>+503 7943 8284</p>
             </div>
           </div>
-          <div class="contact-item">
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="600">
             <div class="contact-icon">
               <FontAwesomeIcon class="icon" icon="envelope" />
             </div>
@@ -35,7 +35,7 @@
               <p>karinarbonilla1822@gmial.com</p>
             </div>
           </div>
-          <div class="contact-item">
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="800">
             <div class="contact-icon">
               <FontAwesomeIcon class="icon" icon="clock" />
             </div>
@@ -46,7 +46,7 @@
             </div>
           </div>
         </div>
-        <div class="contact-map">
+        <div class="contact-map" data-aos="fade-left" data-aos-delay="400">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0520352236904!2d-89.7323333!3d13.715298299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62b79b6c6a35ed%3A0xf23612ca4e6b4e02!2sMega%20Plaza%20Sonsonate.!5e0!3m2!1ses-419!2ssv!4v1759690786008!5m2!1ses-419!2ssv"
             allowfullscreen="false"

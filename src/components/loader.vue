@@ -1,58 +1,88 @@
 <template>
   <div class="loader-container">
-    <div class="loader">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
+    <!-- OLA SUPERIOR -->
+    <div class="wave top-wave"></div>
+
+    <!-- OLA INFERIOR -->
+    <div class="wave bottom-wave"></div>
+
+    <!-- LOGO -->
+    <img src="/dist/assets/logoMK_black-8cadc74c.svg" alt="Logo" class="logo" />
   </div>
 </template>
 
-<style>
-/* Centrado pantalla */
+<style scoped>
+/* CONTENEDOR */
 .loader-container {
+  position: relative;
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffff; /* Cambia si deseas fondo claro */
+  overflow: hidden;
 }
 
-/* Contenedor */
-.loader {
-  display: flex;
-  gap: 20px;
+/* LOGO CENTRADO */
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  animation: pulse 1.8s infinite ease-in-out;
 }
 
-/* Items */
-.item {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background: radial-gradient(circle, gold, goldenrod);
-  box-shadow: 0 0 12px gold, 0 0 25px goldenrod;
-  animation: bounce 0.8s infinite alternate ease;
-  opacity: 0.85;
+/* OLA BASE */
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 55%;
+  left: -50%;
+  background-repeat: repeat-x;
+  animation: waveMove 4s linear infinite;
+  transform-origin: center;
 }
 
-/* Delay per item */
-.item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.item:nth-child(3) {
-  animation-delay: 0.4s;
+/* OLA SUPERIOR */
+.top-wave {
+  top: -25%;
+  transform: rotate(-10deg);
+  background: linear-gradient(90deg, black 0%, black 50%, black 100%);
+  border-bottom-left-radius: 50% 30%;
+  border-bottom-right-radius: 50% 30%;
 }
 
-/* Animation */
-@keyframes bounce {
+/* OLA INFERIOR */
+.bottom-wave {
+  bottom: -25%;
+  transform: rotate(-10deg);
+  animation-direction: reverse;
+  background: linear-gradient(90deg, #d4af37 0%, #d4af37 50%, #d4af37 100%);
+  border-top-left-radius: 50% 30%;
+  border-top-right-radius: 50% 30%;
+}
+
+/* ANIMACIONES */
+@keyframes waveMove {
+  from {
+    transform: translateX(0) rotate(-12deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(-12deg);
+  }
+}
+
+@keyframes pulse {
   0% {
-    transform: translateY(0) scale(0.7);
-    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(0.95);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
   }
   100% {
-    transform: translateY(-22px) scale(1.05);
-    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.95);
+    opacity: 0.85;
   }
 }
 </style>

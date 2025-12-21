@@ -1,5 +1,5 @@
 <template>
-  <section class="home" id="home">
+  <section class="home" id="home" data-aos="fade-in" data-aos-duration="1500">
     <div class="content">
       <h1>MK STUDIO BELLEZA</h1>
       <p>
@@ -7,11 +7,8 @@
         precisión. Nos esforzamos por que cada uno de los servicios sean únicos
         y refleje la satisfacción de quienes confian en nosotros.
       </p>
-     
-        <router-link class="btn" to="#conoce-mas"
-          >Conoce Más</router-link
-        >
-    
+
+      <router-link class="btn" to="#conoce-mas">Conoce Más</router-link>
     </div>
   </section>
 
@@ -40,8 +37,8 @@
 </template>
 
 <style>
-.home{
-  min-height:100vh;
+.home {
+  min-height: 100vh;
   padding: 6rem 9% 2rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/hands.jpg") no-repeat center center/cover;
@@ -74,6 +71,18 @@ import CardSlide from "../components/CardSlide.vue";
 import ubication from "../components/ubication.vue";
 import SectionUs from "../components/sectionUs.vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+import { onMounted } from "vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+onMounted(() => {
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: "ease-in-out",
+  });
+});
 </script>
 <style>
 .whatsapp-btn {

@@ -1,8 +1,14 @@
 <template>
   <section class="We-Us" id="nosotros">
     <div class="We-Us-container">
-      <img src="../img/Sister.jpeg" alt="Sobre Nosotros" class="We-img" />
-      <div class="We-content">
+      <img
+        src="../img/Sister.jpeg"
+        alt="Sobre Nosotros"
+        class="We-img"
+        data-aos="fade-right"
+        data-aos-delay="400"
+      />
+      <div class="We-content" data-aos="fade-left" data-aos-delay="200">
         <h2 class="We-title">Nuestro Objetivo</h2>
         <p class="We-text">
           Cuidamos tus manos y pies, transformándolos en verdaderas obras de
