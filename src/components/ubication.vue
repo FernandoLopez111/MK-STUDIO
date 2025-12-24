@@ -91,15 +91,12 @@ import { FontAwesomeIcon } from "../routes/font-awesome";
   box-shadow: 0 2px 6px rgba(212, 160, 23, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* .contact-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(192, 147, 32, 0.822);
-} */
+
 .contact-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px; /* tamaño fijo para que todos se alineen */
+  width: 35px; 
 }
 
 .contact-icon .icon {
@@ -127,7 +124,7 @@ import { FontAwesomeIcon } from "../routes/font-awesome";
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   margin-top: 20px;
-    min-height: 350px; /* altura mínima para laptops */
+    min-height: 350px; 
 
 }
 .contact-map iframe {
@@ -153,7 +150,7 @@ import { FontAwesomeIcon } from "../routes/font-awesome";
   }
 
   .contact-item {
-    justify-content: flex-start; /* iconos alineados a la izquierda */
+    justify-content: flex-start; 
     text-align: left;
   }
 
@@ -163,7 +160,7 @@ import { FontAwesomeIcon } from "../routes/font-awesome";
 }
 @media (max-width: 480px) {
   .contact-map {
-    min-height: 250px; /* más pequeño en celular */
+    min-height: 250px; 
   }
 }
 </style>

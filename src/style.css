@@ -27,14 +27,10 @@
 }
 body {
   background-color: beige;
-  overflow-anchor: none;
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  font-size: 97%;
-    scroll-behavior: auto;
-}
+
 .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -76,10 +72,8 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.3rem 10%;
+  padding: 1.5rem 10%;
   background-color: beige;
-  /* background: rgba(0, 0, 0, 0.1); */
-  /* backdrop-filter: blur(5px); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,7 +103,7 @@ html {
 }
 
 #bars {
-  font-size: 2.3rem;
+  font-size: 3rem;
   color: var(--text-color);
   cursor: pointer;
   display: none;
@@ -189,12 +183,12 @@ html {
 /*RESPONSIVE SECTION*/
 @media (max-width: 1200px) {
   html {
-    font-size: 95%;
+    font-size: 100%;
   }
 }
 @media (max-width: 990px) {
   html {
-    font-size: 79%;
+    font-size: 80%;
   }
   .header {
     padding: 2rem 4%;
@@ -218,12 +212,11 @@ html {
     font-size: 79%;
   }
   .home-section {
-    background-position: center top; /* muestra más la parte superior en móvil */
+    background-position: center top;
   }
   .header {
     background-color: beige;
-    /* background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px); */
+   
   }
   #bars {
     display: block;
@@ -236,8 +229,6 @@ html {
     width: 100%;
     padding: 1rem 4%;
     background-color: beige;
-    /* background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px); */
     transition-delay: 0.25s;
   }
 
@@ -289,7 +280,7 @@ html {
     flex-direction: column;
   }
     .icon-top {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 

@@ -39,10 +39,12 @@
 <style>
 .home {
   min-height: 100vh;
+  height: auto;
   padding: 6rem 9% 2rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/hands.jpg") no-repeat center center/cover;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;

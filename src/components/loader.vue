@@ -1,31 +1,31 @@
+
 <template>
-  <div class="loader-container">
-    <!-- OLA SUPERIOR -->
-    <div class="wave top-wave"></div>
+  <section>
+    <div class="loader-container">
+      
+       <div class="wave top-wave"></div>
 
-    <!-- OLA INFERIOR -->
-    <div class="wave bottom-wave"></div>
+       <div class="wave bottom-wave"></div> 
 
-    <!-- LOGO -->
-    <img src="../assets/logoMK_black.svg" alt="Logo" class="logo" />
-  </div>
-</template>
+       LOGO 
+      <img src="../assets/logoMK_black.svg" alt="Logo" class="logo" /> 
+    </div>
+  </section>
+</template> 
 
 <style scoped>
-/* CONTENEDOR */
 .loader-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+  position: fixed;
+  inset: 0;
+ z-index: 9999;
   overflow: hidden;
 }
 
-/* LOGO CENTRADO */
 .logo {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;
+  width: 160px;
   transform: translate(-50%, -50%);
   z-index: 10;
   animation: pulse 1.8s infinite ease-in-out;
@@ -34,40 +34,36 @@
 /* OLA BASE */
 .wave {
   position: absolute;
-  width: 200%;
+  width: 150%;
   height: 55%;
-  left: -50%;
-  background-repeat: repeat-x;
+  left: -25%;
   animation: waveMove 4s linear infinite;
-  transform-origin: center;
+  will-change: transform;
 }
 
-/* OLA SUPERIOR */
 .top-wave {
-  top: -25%;
+  top: -30%;
   transform: rotate(-10deg);
-  background: linear-gradient(90deg, black 0%, black 50%, black 100%);
+  background: black;
   border-bottom-left-radius: 50% 30%;
   border-bottom-right-radius: 50% 30%;
 }
 
-/* OLA INFERIOR */
 .bottom-wave {
-  bottom: -25%;
+  bottom: -30%;
   transform: rotate(-10deg);
   animation-direction: reverse;
-  background: linear-gradient(90deg, #d4af37 0%, #d4af37 50%, #d4af37 100%);
+  background: #d4af37;
   border-top-left-radius: 50% 30%;
   border-top-right-radius: 50% 30%;
 }
 
-/* ANIMACIONES */
 @keyframes waveMove {
   from {
-    transform: translateX(0) rotate(-12deg);
+    transform: translateX(0) rotate(-10deg);
   }
   to {
-    transform: translateX(-50%) rotate(-12deg);
+    transform: translateX(-30%) rotate(-10deg);
   }
 }
 
@@ -85,4 +81,4 @@
     opacity: 0.85;
   }
 }
-</style>
+</style> 
