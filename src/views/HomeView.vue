@@ -101,9 +101,9 @@ onMounted(() => {
   justify-content: center;
   font-size: 1.8rem;
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
-  z-index: 999;
-  transition: var(--transition);
+  z-index: 3000; 
 }
+
 
 .whatsapp-btn:hover {
   transform: scale(1.1);

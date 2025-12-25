@@ -26,7 +26,7 @@ import {
 library.add(
   faArrowUpFromBracket,
   faHouse,
-    faAddressCard,
+  faAddressCard,
   faBullseye,
   faTag,
   faXmark,
