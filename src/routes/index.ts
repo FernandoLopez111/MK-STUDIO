@@ -4,6 +4,7 @@ import Home from "../views/HomeView.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [{ path: "/", component: Home }],
+  
   scrollBehavior(to) {
     if (to.hash) {
       return { el: to.hash, behavior:"smooth" };

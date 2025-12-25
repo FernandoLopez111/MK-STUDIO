@@ -183,12 +183,12 @@ body {
 /*RESPONSIVE SECTION*/
 @media (max-width: 1200px) {
   html {
-    font-size: 100%;
+    font-size: 95%;
   }
 }
 @media (max-width: 990px) {
   html {
-    font-size: 80%;
+    font-size: 79%;
   }
   .header {
     padding: 2rem 4%;
@@ -209,7 +209,7 @@ body {
 
 @media (max-width: 768px) {
   html {
-    font-size: 79%;
+    font-size: 75%;
   }
   .home-section {
     background-position: center top;
