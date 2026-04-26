@@ -8,11 +8,11 @@
         y refleje la satisfacción de quienes confian en nosotros.
       </p>
 
-      <router-link class="btn" to="#conoce-mas">Conoce Más</router-link>
+      <router-link class="btn" to="#conoce-mas" alt="conoce-mas">Conoce Más</router-link>
     </div>
   </section>
 
-  <section class="no" id="nosotros">
+  <section class="no" id="nosotros">  
     <SectionUs />
   </section>
 
@@ -37,6 +37,28 @@
 </template>
 
 <style>
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+  z-index: 3000; 
+}
+
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.7);
+}
 .home {
   min-height: 100vh;
   height: auto;
@@ -86,27 +108,4 @@ onMounted(() => {
   });
 });
 </script>
-<style>
-.whatsapp-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
-  z-index: 3000; 
-}
 
-
-.whatsapp-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.7);
-}
-</style>
