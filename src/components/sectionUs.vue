@@ -3,6 +3,7 @@
     <div class="We-Us-container">
       <img
         src="../img/Sister.jpeg"
+         loading="lazy"
         alt="Sobre Nosotros"
         class="We-img"
         data-aos="fade-right"

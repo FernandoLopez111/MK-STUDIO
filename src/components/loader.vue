@@ -8,7 +8,7 @@
        <div class="wave bottom-wave"></div> 
 
        LOGO 
-      <img src="../assets/logoMK_black.svg" alt="Logo" class="logo" /> 
+      <img src="../assets/logoMK_black.svg"  loading="lazy" alt="Logo" class="logo" /> 
     </div>
   </section>
 </template> 

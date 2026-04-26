@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <router-link to="/" @click="handleLogoClick" class="active"
-      ><img src="../assets/logoMK_black.svg" class="icono" id="icono"
+      ><img src="../assets/logoMK_black.svg" alt="logo" class="icono" id="icono"
     /></router-link>
     <FontAwesomeIcon
       icon="bars"
