@@ -1,24 +1,13 @@
 <script setup lang="ts">
-import Loader from "./components/loader.vue";
 import Header from "./components/index.vue";
 import Footer from "./components/cardfooter.vue"
-import { ref, onMounted } from "vue";
-const showLoader = ref(true);
+import loader from "./components/loader.vue";
 
-onMounted(() => {
-  setTimeout(() => {
-    showLoader.value = false;
-  }, 2000);
-});
 </script>
 
 <template>
-  <div>
-    <Loader v-if="showLoader" />
-    <template v-else>
     <Header />
+    <loader/>
     <router-view />
     <Footer/>
-    </template>
-  </div>
 </template>

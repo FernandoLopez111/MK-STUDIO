@@ -1,32 +1,51 @@
-
 <template>
-  <section>
-    <div class="loader-container">
-      
-       <div class="wave top-wave"></div>
-
-       <div class="wave bottom-wave"></div> 
-
-       LOGO 
-      <img src="../assets/logoMK_black.svg"  loading="lazy" alt="Logo" class="logo" /> 
+  <teleport to="body">
+    <div :class="['loader-container', { hidden: !loading }]">
+      <div class="wave top-wave"></div>
+      <div class="wave bottom-wave"></div>
+      <img
+        src="../assets/logoMK_black.svg"
+        loading="lazy"
+        alt="Logo"
+        class="logo"
+      />
     </div>
-  </section>
-</template> 
+  </teleport>
+</template>
+<script setup lang="ts">
+import { ref, onMounted } from "vue";
+const loading = ref(true);
+
+onMounted(() => {
+  setTimeout(() => {
+    loading.value = false;
+  }, 1500);
+});
+</script>
 
 <style scoped>
 .loader-container {
   position: fixed;
   inset: 0;
- z-index: 9999;
+  z-index: 99999;
   overflow: hidden;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.loader-container.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 160px;
-  transform: translate(-50%, -50%);
+  position: relative;
+  width: 140px;
   z-index: 10;
   animation: pulse 1.8s infinite ease-in-out;
 }
@@ -34,51 +53,49 @@
 /* OLA BASE */
 .wave {
   position: absolute;
-  width: 150%;
-  height: 55%;
-  left: -25%;
+  width: 110%;
+  height: 50%;
+  left: -5%;
   animation: waveMove 4s linear infinite;
   will-change: transform;
 }
 
 .top-wave {
-  top: -30%;
-  transform: rotate(-10deg);
+  top: -25%;
   background: black;
   border-bottom-left-radius: 50% 30%;
   border-bottom-right-radius: 50% 30%;
 }
 
 .bottom-wave {
-  bottom: -30%;
-  transform: rotate(-10deg);
-  animation-direction: reverse;
+  bottom: -25%;
   background: #d4af37;
+  animation-direction: reverse;
   border-top-left-radius: 50% 30%;
   border-top-right-radius: 50% 30%;
 }
 
 @keyframes waveMove {
   from {
-    transform: translateX(0) rotate(-10deg);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-30%) rotate(-10deg);
+    transform: translateX(-20%);
   }
 }
 
 @keyframes pulse {
   0% {
-    transform: translate(-50%, -50%) scale(0.95);
+    transform: scale(0.95);
     opacity: 0.85;
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.05);
+    transform: scale(1.05);
     opacity: 1;
   }
   100% {
-    transform: translate(-50%, -50%) scale(0.95);
+    transform: scale(0.95);
     opacity: 0.85;
   }
 }
-</style> 
+</style>

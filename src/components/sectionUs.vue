@@ -6,10 +6,10 @@
          loading="lazy"
         alt="Sobre Nosotros"
         class="We-img"
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-delay="400"
       />
-      <div class="We-content" data-aos="fade-left" data-aos-delay="200">
+      <div class="We-content" data-aos="fade-down" data-aos-delay="200">
         <h2 class="We-title">Nuestro Objetivo</h2>
         <p class="We-text">
           Cuidamos tus manos y pies, transformándolos en verdaderas obras de

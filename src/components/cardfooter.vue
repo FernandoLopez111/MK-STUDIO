@@ -1,15 +1,5 @@
 <script setup lang="ts">
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
-const goToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-
-  window.history.replaceState(
-    {},
-    "",
-    window.location.pathname + window.location.search
-  );
-};
 </script>
 
 <template>
@@ -25,12 +15,6 @@ const goToTop = () => {
         href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fnailsroomkm1%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExSGJmVlc4ZDYza3d1ZVo3NQEerSRCm2jqWcRuzNdeVgumjH0ZctuE2JNcONiQJ7XekJc1s9LM2W-418_60UQ_aem_KQkW4-osy8xbIR0Hp_GjzQ&h=AT0xC_DBhwzzidTOkd42cRTk1CL0xRuwQSy0Oj_l1BBSVm-RMoZrCdNBAbdN4Z-zceFFlrLSZZwUjBsfypW33HvCf6FFda8kfTBqXDiwtprDzvrlgQBCFR8cTPNO1zVxt3vdRg"
         ><FontAwesomeIcon :icon="['fab', 'instagram']"></FontAwesomeIcon
       ></a>
-      <a>
-        <FontAwesomeIcon
-          @click="goToTop"
-          :icon="['fas', 'arrow-up-from-bracket']"
-        />
-      </a>
     </div>
     <ul class="list">
       <li class="active">

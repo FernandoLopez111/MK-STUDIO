@@ -8,11 +8,13 @@
         y refleje la satisfacción de quienes confian en nosotros.
       </p>
 
-      <router-link class="btn" to="#conoce-mas" alt="conoce-mas">Conoce Más</router-link>
+      <router-link class="btn" to="#conoce-mas" alt="conoce-mas"
+        >Conoce Más</router-link
+      >
     </div>
   </section>
 
-  <section class="no" id="nosotros">  
+  <section class="no" id="nosotros">
     <SectionUs />
   </section>
 
@@ -28,6 +30,7 @@
     href="https://wa.me/50379438284?text=Hola,%20me%20interesan%20tus%20servicios"
     class="whatsapp-btn"
     target="_blank"
+     rel="noopener noreferrer"
   >
     <FontAwesomeIcon
       :icon="['fab', 'whatsapp']"
@@ -51,9 +54,9 @@
   justify-content: center;
   font-size: 1.8rem;
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
-  z-index: 3000; 
+  z-index: 999;
+  will-change: transform;
 }
-
 
 .whatsapp-btn:hover {
   transform: scale(1.1);
@@ -63,7 +66,8 @@
   min-height: 100vh;
   height: auto;
   padding: 6rem 9% 2rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/hands.jpg") no-repeat center center/cover;
   display: flex;
   flex-wrap: wrap;
@@ -108,4 +112,3 @@ onMounted(() => {
   });
 });
 </script>
-

@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* html, body {
+  overflow-x: hidden;
+} */
+
 /*NAVBAR*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 :root {
@@ -174,7 +177,7 @@ body {
 /*END FOOTER*/
 .heading {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -183,24 +186,24 @@ body {
 /*RESPONSIVE SECTION*/
 @media (max-width: 1200px) {
   html {
-    font-size: 95%;
+    font-size: 90%;
   }
 }
 @media (max-width: 990px) {
   html {
-    font-size: 79%;
+    font-size: 80%;
   }
   .header {
-    padding: 2rem 4%;
+    padding: 2rem 2%;
   }
   .home-section {
-    padding: 10rem 4% 5rem;
+    padding: 10rem 3% 5rem;
   }
   .contact {
     padding: 5rem 4% 5rem;
   }
   .home {
-    padding: 0 4%;
+    padding: 0 2%;
   }
   .footer {
     padding: 2rem 4%;
@@ -226,8 +229,8 @@ body {
     position: absolute;
     top: 100%;
     left: -100%;
-    width: 100%;
-    padding: 1rem 4%;
+    width: 90%;
+    padding: 1rem 3%;
     background-color: beige;
     transition-delay: 0.25s;
   }
@@ -241,7 +244,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -272,7 +275,7 @@ body {
 }
 @media (max-width: 520px) {
   html {
-    font-size: 77%;
+    font-size: 70%;
   }
 
   .content h1 {
@@ -290,7 +293,7 @@ body {
   }
 
   .container-card {
-    padding: 10rem 4% 5rem 5%;
+    padding: 5rem 3% 5rem 5%;
   }
   .contact {
     padding: 10rem 4% 5rem 5%;

@@ -1,21 +1,19 @@
 <template>
   <section id="contacto" class="contact">
     <div class="container">
-      <h2 class="section-title"  data-aos="fade-up">Contacto</h2>
+      <h2 class="section-title" data-aos="fade-up">Contacto</h2>
       <div class="contact-container">
         <div class="contact-info">
-          <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="contact-item" data-aos="fade-down" data-aos-delay="200">
             <div class="contact-icon">
               <FontAwesomeIcon class="icon" icon="location-dot" />
             </div>
             <div class="contact-details">
               <h3>Dirección</h3>
-              <p>
-                5ta Calle Colonia Santa Marta, Sonsonate.
-              </p>
+              <p>5ta Calle Colonia Santa Marta, Sonsonate.</p>
             </div>
           </div>
-          <div class="contact-item" data-aos="fade-right" data-aos-delay="400">
+          <div class="contact-item" data-aos="fade-down" data-aos-delay="400">
             <div class="contact-icon">
               <FontAwesomeIcon class="icon" icon="phone" />
             </div>
@@ -24,7 +22,7 @@
               <p>+503 7943 8284</p>
             </div>
           </div>
-          <div class="contact-item" data-aos="fade-right" data-aos-delay="600">
+          <div class="contact-item" data-aos="fade-down" data-aos-delay="600">
             <div class="contact-icon">
               <FontAwesomeIcon class="icon" icon="envelope" />
             </div>
@@ -33,7 +31,7 @@
               <p>karinarbonilla1822@gmial.com</p>
             </div>
           </div>
-          <div class="contact-item" data-aos="fade-right" data-aos-delay="800">
+          <div class="contact-item" data-aos="fade-down" data-aos-delay="800">
             <div class="contact-icon">
               <FontAwesomeIcon class="icon" icon="clock" />
             </div>
@@ -44,8 +42,8 @@
             </div>
           </div>
         </div>
-        <div class="contact-map" data-aos="fade-left" data-aos-delay="400">
-          <iframe 
+        <div class="contact-map" data-aos="fade-down" data-aos-delay="400">
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0520352236904!2d-89.7323333!3d13.715298299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62b79b6c6a35ed%3A0xf23612ca4e6b4e02!2sMega%20Plaza%20Sonsonate.!5e0!3m2!1ses-419!2ssv!4v1759690786008!5m2!1ses-419!2ssv"
             allowfullscreen="false"
             loading="lazy"
@@ -58,19 +56,26 @@
 </template>
 <script setup lang="ts">
 import { FontAwesomeIcon } from "../routes/font-awesome";
+import Aos from "aos";
+Aos.init({
+  once: true, // solo anima una vez
+  offset: 50,
+  duration: 800,
+  easing: "ease-in-out",
+});
 </script>
 <style>
 .contact {
-  padding: 80px 20px;
+  padding: 40px 20px;
   background-color: beige;
 }
 
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   align-items: start;
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -88,14 +93,16 @@ import { FontAwesomeIcon } from "../routes/font-awesome";
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(212, 160, 23, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .contact-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px; 
+  width: 35px;
 }
 
 .contact-icon .icon {
@@ -121,10 +128,6 @@ import { FontAwesomeIcon } from "../routes/font-awesome";
   padding-top: 56.25%;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  margin-top: 20px;
-    min-height: 350px; 
-
 }
 .contact-map iframe {
   position: absolute;
@@ -135,21 +138,17 @@ import { FontAwesomeIcon } from "../routes/font-awesome";
   border: 0;
 }
 
-.map-container iframe:hover {
-  transform: scale(1.02);
-}
-
 @media (max-width: 990px) {
-  .contact-map{
-    min-height: 300px;
+  .contact-map {
+    padding-top: 75%;
   }
   .contact-container {
-    grid-template-columns: 3fr;
+    grid-template-columns: 1fr;
     align-items: center;
   }
 
   .contact-item {
-    justify-content: flex-start; 
+    justify-content: flex-start;
     text-align: left;
   }
 
@@ -157,9 +156,9 @@ import { FontAwesomeIcon } from "../routes/font-awesome";
     margin-top: 10px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .contact-map {
-    min-height: 250px; 
+    padding-top: 60%;
   }
 }
 </style>
