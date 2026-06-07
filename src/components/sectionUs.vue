@@ -13,9 +13,9 @@
         <h2 class="We-title">Nuestro Objetivo</h2>
         <p class="We-text">
           Cuidamos tus manos y pies, transformándolos en verdaderas obras de
-          arte. Cada manicure, pedicure y aplicación de acrílicos está pensado
+          arte. Cada manicure, pedicure, lifting y aplicación de acrílicos está pensado
           para resaltar tu estilo y personalidad, con un servicio profesional
-          que te hará sentir única. Porque en MK Space & Care no solo embellecemos tus
+          que te hará sentir única. Porque en MK Studio Belleza no solo embellecemos tus
           uñas, creamos experiencias llenas de glamour y detalle en cada
           visita..
         </p>
