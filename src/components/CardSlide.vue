@@ -5,7 +5,7 @@
       <div class="card" data-aos="fade-up" data-aos-delay="200">
         <div class="image">
           <img
-            src="../img/pedicure.jpg"
+            src="../img/pedicure.webp"
             loading="lazy"
             alt="Servicio de belleza"
           />
@@ -21,7 +21,7 @@
       <div class="card" data-aos="fade-up" data-aos-delay="200">
         <div class="image">
           <img
-            src="../img/manicure.jpeg"
+            src="../img/manicure.webp"
             loading="lazy"
             alt="Servicio de belleza"
           />
@@ -38,7 +38,7 @@
       <div class="card" data-aos="fade-up" data-aos-delay="200">
         <div class="image">
           <img
-            src="../img/manos.jpg"
+            src="../img/manos.webp"
             loading="lazy"
             alt="Servicio de belleza"
           />
@@ -55,7 +55,7 @@
       <div class="card" data-aos="fade-up" data-aos-delay="200">
         <div class="image">
           <img
-            src="../img/Lifting.jpeg"
+            src="../img/lifting.webp"
             loading="lazy"
             alt="Servicio de belleza"
           />
@@ -72,7 +72,7 @@
       <div class="card" data-aos="fade-up" data-aos-delay="200">
         <div class="image">
           <img
-            src="../img/laminado.jpeg"
+            src="../img/laminado.webp"
             loading="lazy"
             alt="Servicio de belleza"
           />
@@ -89,7 +89,7 @@
       <div class="card" data-aos="fade-up" data-aos-delay="200">
         <div class="image">
           <img
-            src="../img/Acripie.jpeg"
+            src="../img/Acripie.webp"
             loading="lazy"
             alt="Servicio de belleza"
           />

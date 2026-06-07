@@ -2,7 +2,7 @@
   <section class="We-Us" id="nosotros">
     <div class="We-Us-container">
       <img
-        src="../img/Sister.jpeg"
+        src="../img/Sister.webp"
          loading="lazy"
         alt="Sobre Nosotros"
         class="We-img"
@@ -15,7 +15,7 @@
           Cuidamos tus manos y pies, transformándolos en verdaderas obras de
           arte. Cada manicure, pedicure y aplicación de acrílicos está pensado
           para resaltar tu estilo y personalidad, con un servicio profesional
-          que te hará sentir única. Porque en MK Studio no solo embellecemos tus
+          que te hará sentir única. Porque en MK Space & Care no solo embellecemos tus
           uñas, creamos experiencias llenas de glamour y detalle en cada
           visita..
         </p>
@@ -29,7 +29,7 @@
   background-color: #121212;
   color: #fff;
   padding: 70px 40px;
-  margin-top: 6rem;
+  margin-top: 4rem;
   padding: var(--spacing-xl) 0;
 }
 

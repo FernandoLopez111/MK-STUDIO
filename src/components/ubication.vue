@@ -10,7 +10,7 @@
             </div>
             <div class="contact-details">
               <h3>Dirección</h3>
-              <p>5ta Calle Colonia Santa Marta, Sonsonate.</p>
+              <p>5ta calle oriente 2, Sonsonate 2301</p>
             </div>
           </div>
           <div class="contact-item" data-aos="fade-down" data-aos-delay="400">
@@ -44,7 +44,7 @@
         </div>
         <div class="contact-map" data-aos="fade-down" data-aos-delay="400">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0520352236904!2d-89.7323333!3d13.715298299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62b79b6c6a35ed%3A0xf23612ca4e6b4e02!2sMega%20Plaza%20Sonsonate.!5e0!3m2!1ses-419!2ssv!4v1759690786008!5m2!1ses-419!2ssv"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8912569090185!2d-89.71730909517817!3d13.725032915092385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62b7e5ee012b45%3A0xa0e4adcead244628!2sMK%20Studio%20Belleza!5e0!3m2!1ses!2ssv!4v1780792240147!5m2!1ses!2ssv"
             allowfullscreen="false"
             loading="lazy"
             alt="map"

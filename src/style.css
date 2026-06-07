@@ -194,7 +194,7 @@ body {
     font-size: 80%;
   }
   .header {
-    padding: 2rem 2%;
+    padding: 2rem 4%;
   }
   .home-section {
     padding: 10rem 3% 5rem;
@@ -229,8 +229,8 @@ body {
     position: absolute;
     top: 100%;
     left: -100%;
-    width: 90%;
-    padding: 1rem 3%;
+    width: 100%;
+    padding: 1rem 4%;
     background-color: beige;
     transition-delay: 0.25s;
   }
