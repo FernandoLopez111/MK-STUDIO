@@ -21,9 +21,6 @@
   <section class="no" id="conoce-mas">
     <CardSlide />
   </section>
-  <!-- <section class="no" id="galeria">
-    <Gallery/>
-  </section> -->
 
   <section class="no" id="contacto">
     <ubication />
