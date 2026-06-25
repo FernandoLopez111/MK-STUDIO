@@ -124,18 +124,13 @@
   border-radius: 8px;
   overflow: hidden;
   background: white;
-  box-shadow: 0px 2px 4px #FCD34D;
+  box-shadow: 0px 2px 4px #fcd34d;
   transition: all 400ms ease-out;
   margin: 20px;
 }
 
-.product-price {
-  font-weight: 600;
-  color: black;
-  margin-bottom: var(--spacing-sm);
-}
 .card:hover {
-  box-shadow: 0 8px 20px #FCD34D;
+  box-shadow: 0 8px 20px #fcd34d;
   transform: translateY(-6px);
 }
 .image {
@@ -162,11 +157,6 @@
   margin-bottom: var(--spacing-xs);
 }
 
-/* .card .contenido-card .price {
-  font-weight: 700;
-  color: #FCD34D;
-  margin-bottom: var(--spacing-sm);
-} */
 .card .contenido-card p {
   margin-bottom: var(--spacing-sm);
   font-size: 1rem;
