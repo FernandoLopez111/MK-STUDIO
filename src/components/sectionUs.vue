@@ -10,7 +10,7 @@
         data-aos-delay="400"
       />
       <div class="We-content" data-aos="fade-down" data-aos-delay="200">
-        <h2 class="We-title">Nuestro Objetivo</h2>
+        <h2 class="We-title  text-amber-300">Nuestro Objetivo</h2>
         <p class="We-text">
           Cuidamos tus manos y pies, transformándolos en verdaderas obras de
           arte. Cada manicure, pedicure, lifting y aplicación de acrílicos está pensado
@@ -63,7 +63,6 @@
 .We-title {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: goldenrod;
 }
 
 .We-text {

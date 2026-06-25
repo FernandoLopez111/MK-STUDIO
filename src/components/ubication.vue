@@ -19,7 +19,7 @@
             </div>
             <div class="contact-details">
               <h3>Teléfono</h3>
-              <p>+503 7943 8284</p>
+              <a href="tel:+50379438284">+503 7943 8284</a>
             </div>
           </div>
           <div class="contact-item" data-aos="fade-down" data-aos-delay="600">
@@ -27,18 +27,9 @@
               <FontAwesomeIcon class="icon" icon="envelope" />
             </div>
             <div class="contact-details">
-              <h3>Correo Electronico</h3>
-              <p>karinarbonilla1822@gmial.com</p>
-            </div>
-          </div>
-          <div class="contact-item" data-aos="fade-down" data-aos-delay="800">
-            <div class="contact-icon">
-              <FontAwesomeIcon class="icon" icon="clock" />
-            </div>
-            <div class="contact-details">
-              <h3>Horario</h3>
-              <p>Lunes a Viernes: 9:00 - 6:00<br />Sábados: 9:00 - 4:00</p>
-              <p>Domingos:Cita Previa</p>
+              <a href="mailto:karinarbonilla1822@gmail.com"
+                >karinarbonilla1822@gmail.com</a
+              >
             </div>
           </div>
         </div>
@@ -67,7 +58,7 @@ Aos.init({
 <style>
 .contact {
   padding: 40px 20px;
-  background-color: beige;
+  background-color: white;
 }
 
 .contact-container {

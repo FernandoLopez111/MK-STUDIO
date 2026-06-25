@@ -1,7 +1,11 @@
 <template>
-  <header class="header">
+  <header class="header bg-amber-300">
     <router-link to="/" @click="handleLogoClick" class="active"
-      ><img src="../assets/logoMK_black.svg" alt="logo" class="icono" id="icono"
+      ><img
+        src="../assets/logoMK_black.svg"
+        alt="logo"
+        class="icono"
+        id="icono"
     /></router-link>
     <FontAwesomeIcon
       icon="bars"
@@ -12,26 +16,32 @@
     />
 
     <nav class="navbar" :class="{ active: isMenuOpen }">
-     
       <a
         class="active nav-link"
         href="#nosotros"
         @click.prevent="scrollToSection('nosotros')"
-        ><FontAwesomeIcon :icon="['fas', 'bullseye']"/> Nuestro Objetivo</a
+        ><FontAwesomeIcon :icon="['fas', 'bullseye']" /> Nuestro Objetivo</a
       >
 
       <a
         class="active nav-link"
         href="#conoce-mas"
         @click.prevent="scrollToSection('conoce-mas')"
-        ><FontAwesomeIcon :icon="['fas', 'tag']"/> Nuestros Servicios</a
+        ><FontAwesomeIcon :icon="['fas', 'tag']" /> Nuestros Servicios</a
       >
+      <!-- <a
+        class="active nav-link"
+        href="#galeria"
+        @click.prevent="scrollToSection('galeria')"
+        ><FontAwesomeIcon :icon="['fas', 'address-card']" /> Nuestros
+        Resultados</a
+      > -->
 
       <a
         class="active nav-link"
         href="#contacto"
         @click.prevent="scrollToSection('contacto')"
-        ><FontAwesomeIcon :icon="['fas', 'address-card']"/> Contacto</a
+        ><FontAwesomeIcon :icon="['fas', 'address-card']" /> Contacto</a
       >
 
       <span class="active-nav"></span>
@@ -67,7 +77,7 @@ const clearHashOnLoad = (): void => {
     window.history.replaceState(
       {},
       "",
-      window.location.pathname + window.location.search
+      window.location.pathname + window.location.search,
     );
 
     window.scrollTo(0, 0);
@@ -81,7 +91,7 @@ const handleBeforeUnload = (): void => {
     window.history.replaceState(
       {},
       "",
-      window.location.pathname + window.location.search
+      window.location.pathname + window.location.search,
     );
   }
 };

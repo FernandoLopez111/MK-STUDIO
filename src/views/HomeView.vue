@@ -21,6 +21,9 @@
   <section class="no" id="conoce-mas">
     <CardSlide />
   </section>
+  <!-- <section class="no" id="galeria">
+    <Gallery/>
+  </section> -->
 
   <section class="no" id="contacto">
     <ubication />
@@ -30,22 +33,19 @@
     href="https://wa.me/50379438284?text=Hola,%20me%20interesan%20tus%20servicios"
     class="whatsapp-btn"
     target="_blank"
-     rel="noopener noreferrer"
   >
-    <FontAwesomeIcon
-      :icon="['fab', 'whatsapp']"
-      class="fab fa-whatsapp"
-    ></FontAwesomeIcon>
+    <FontAwesomeIcon icon=" fa-brands fa-whatsapp" />
   </a>
 </template>
 
 <style>
+/* WhatsApp Button */
 .whatsapp-btn {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color: #25d366;
   color: white;
   border-radius: 50%;
@@ -55,13 +55,14 @@
   font-size: 1.8rem;
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
   z-index: 999;
-  will-change: transform;
+  transition: var(--transition);
 }
 
 .whatsapp-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 25px rgba(37, 211, 102, 0.7);
 }
+
 .home {
   min-height: 100vh;
   height: auto;
@@ -75,7 +76,7 @@
   justify-content: center;
   text-align: center;
   color: white;
-  margin-top: 87px;
+  margin-top: 80px;
 }
 .content {
   max-width: 800px;
@@ -99,6 +100,7 @@ import CardSlide from "../components/CardSlide.vue";
 import ubication from "../components/ubication.vue";
 import SectionUs from "../components/sectionUs.vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+// import Gallery from "../components/gallery.vue";
 
 import { onMounted } from "vue";
 import AOS from "aos";
