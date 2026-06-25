@@ -5,7 +5,7 @@
       <div class="card" data-aos="fade-up" data-aos-delay="200">
         <div class="image">
           <img
-            src="../img/Pedicure.webp"
+            src="../img/pedicure.webp"
             loading="lazy"
             alt="Servicio de belleza"
           />
